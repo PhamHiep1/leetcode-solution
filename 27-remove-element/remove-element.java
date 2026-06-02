@@ -3,8 +3,8 @@ class Solution {
         int r = nums.length-1;
         int l = 0;
 
-        while(l<=r){
-            if(nums[l] == val ){
+        while(l <= r){
+            if(nums[l] == val){
                 nums[l] = nums[r--];
             }
             else{
