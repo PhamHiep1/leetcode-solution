@@ -1,11 +1,11 @@
 class Solution {
     public int[] twoSum(int[] numbers, int target) {
+        if(numbers == null || numbers.length == 0){
+            return new int[]{-1,-1};
+        }
+        
         int l = 0;
         int r = numbers.length-1;
-        
-        if(numbers == null || numbers.length == 0){
-            return null;
-        }
 
         while(l<r){
             int sum = numbers[l] + numbers[r];
@@ -20,6 +20,6 @@ class Solution {
                 l++;
             }
         }
-        return new int[]{l,r};
+        return new int[]{-1,-1};
     }
 }
